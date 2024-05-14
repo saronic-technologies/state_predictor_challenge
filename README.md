@@ -6,9 +6,11 @@ We want two predictors:
 
 - Given a sequence of vehicle controls and the
   current state of the vehicle output the next state of the vehicle
+  - state of the vehicle is an AHRS message, see the ahrs.log for an example
 
 - Given a current state and a desired state what is the sequence of
   vehicle controls we need to achieve the desired state
+  - state of the vehicle is an AHRS message, see the ahrs.log for an example
 
 ## Dataset
 
