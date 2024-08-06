@@ -17,7 +17,7 @@ We want two predictors:
 
 ## Dataset
 
-We have provided two dataset files:
+We have provided two dataset files which can be fetched using `git lfs pull` after installing git lfs:
 - vehicle_control.csv
   - This is a csv with ts, throttle and turn values
     - ts is a timestamp in UTC
@@ -25,6 +25,11 @@ We have provided two dataset files:
     - turn is a float value between -1.0 and 1.0
       - 0.0 to 1.0 is a right hand turn
       - -1.0 to 0.0 is a left hand turn
+    - gear is a discrete motor setting:
+      - 0 neutral
+      - 1 forward
+      - 2 reverse
+    - trim is the discrete trim command that affects boat dynamics, taking on vals 0, 1 or 2.
 
 - ahrs.csv  
   - This is a csv with ts, roll_deg, pitch_deg, yaw_deg, ve_mps,
